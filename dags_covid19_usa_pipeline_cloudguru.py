@@ -89,7 +89,7 @@ t4 = BashOperator(
     task_id = 'load_bq',
     bash_command = 'bq load --source_format=CSV --autodetect\
                     Covid19_USA.Covid19_USA_NYJH\
-                    gs://australia-southeast1-cloudg-5567f3e3-bucket/data/covid19_ny_jh.csv',
+                    gs://[GCS_BUCKET]/data/covid19_ny_jh.csv',
     dag = dag,
 )
 
